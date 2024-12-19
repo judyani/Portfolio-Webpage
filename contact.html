@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yanitza's Portfolio Contact Page</title>
+    <style>
+        body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1b1b2f;
+    box-sizing: border-box;
+}
+
+/* Header */
+header {
+    background-color: #0d0d1d;
+    color: white;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+}
+
+.nav ul li {
+    margin-right: 20px;
+    
+}
+
+.nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.nav ul li a:hover,
+.nav ul li a.active {
+    color: #613963;
+}
+
+.social-icons {
+    position: absolute; 
+    top: 20px; 
+    right: 20px; 
+    display: flex; 
+    gap: 10px; 
+}
+
+.social-icons a img {
+    width: 30px; 
+    height: 30px;
+    transition: transform 0.3s; 
+}
+
+.social-icons a img:hover {
+    transform: scale(1.2); 
+}
+.social-icons img {
+    filter: invert(1); 
+}
+.header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.header .logo span {
+    color: #613963;
+    font-style: italic;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Main Section */
+main .container {
+    display: flex;
+    gap: 4rem;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 0 20px;
+
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+    gap: 2rem;
+}
+
+.contact-info, .contact-form {
+    background: rgb(140, 128, 141);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    
+}
+
+.contact-form{
+    width: 48%;
+}
+
+.contact-info h2, .contact-form h2 {
+    margin-top: 0;
+    text-align: center;
+}
+
+.contact-info p {
+    margin: 10px 0;
+}
+
+.contact-form form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.contact-form form input, 
+.contact-form form textarea {
+    width: 96%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-form form button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form form button:hover {
+    background-color: #555;
+}
+
+/* Footer */
+footer {
+    background-color: #0d0d1d;
+    color: #fff;
+    text-align: center;
+    padding: 3rem;
+}
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.icon img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s;
+}
+
+.icon img:hover {
+    transform: scale(1.2);
+}
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>Me<span>Vro</span></h1>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="contact.html"class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="social-icons">
+            <a href="https://github.com" target="_blank" class="icon">
+                <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" />
+            </a>
+            <a href="https://facebook.com" target="_blank" class="icon">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" />
+            </a>
+            <a href="https://instagram.com" target="_blank" class="icon">
+                <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" />
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="Contact">
+        <main>
+            <div class="container">
+                <div class="left">
+                <div class="contact-info">
+                    <h2>Contact Information</h2>
+                    <p><strong>Email:</strong> ychave527@west-mec.org</p>
+                    <p><strong>Phone:</strong> (623) 383-1240</p>
+                    <p><strong>Location:</strong> Glendale, AZ</p>
+                    <p><strong>FaceBook:</strong> facebook.com/yanitza</p>
+                    <p><strong>GitHub:</strong> github.com/judyani</p>
+                </div>
+
+                <div class="iframe">
+                <!--     <iframe
+                    src="https://www.google.com/maps/embed?pb=YOUR_MAP_EMBED_LINK"
+                    width="100%"
+                    height="300"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                    </iframe> -->
+
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3325.6709253397585!2d-112.29541422400195!3d33.53594047335572!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b4104080e38d9%3A0x1fbd2919e78fa444!2sWest-MEC%20-%20Central%20Campus!5e0!3m2!1sen!2sus!4v1734123059017!5m2!1sen!2sus" width="550" height="271" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+                <div class="contact-form">
+                    <h2>Questions? Concerns? Message me</h2>
+                    <form action="#" method="post">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                        
+                        <label for="email">Email/Cell Number</label>
+                        <input type="email" id="email" name="email" required>
+                        
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                        
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                        
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+            </div>
+        </main>
+    <!--Footer-->
+    <footer>
+        <p>&copy; 2024 Yanitza's Portfolio Page | All Rights Reserved</p>
+    </footer>
+</body>
+</html>

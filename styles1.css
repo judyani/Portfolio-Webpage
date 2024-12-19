@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #1b1b2f;
+    color: #fff;
+}
+
+.container {
+    text-align: left;
+    align-content: center;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+/* Header */
+.header {
+    background: #0d0d1d;
+    color: #ffffff;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.header .logo span {
+    color: #613963;
+    font-style: italic;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+}
+
+.nav ul li {
+    margin-right: 20px;
+    
+}
+
+.nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.nav ul li a:hover,
+.nav ul li a.active {
+    color: #613963;
+}
+
+.social-icons {
+    position: absolute;
+    top: 20px; 
+    right: 20px; 
+    display: flex; 
+    gap: 10px; 
+}
+
+.social-icons a img {
+    width: 30px; 
+    height: 30px;
+    transition: transform 0.3s; 
+}
+
+.social-icons a img:hover {
+    transform: scale(1.2); 
+}
+.social-icons img {
+    filter: invert(1); 
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 20rem 0;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+.hero-content span {
+    color: #966299;
+}
+.hero-image img {
+    max-width: 25%;
+    border-radius: 10px;
+}
+/* Grid Section */
+.grid{
+    margin: 2px;
+    text-align: center;
+}
+.grid h2{
+    font-size: 30px;
+    margin-bottom: 15px;
+    color: #fff;
+    text-decoration: underline;
+}
+.posts-grid{
+    display: flex;
+    gap: 50px;
+    margin: 8rem;
+    justify-content: center;
+}
+.post{
+    background: rgb(140, 128, 141);
+    padding: 24px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgb(0, 0, 0);
+    width: 300px;
+    text-align: center;
+}
+.post h3{
+    font-size: 19px;
+    margin-bottom: 15px;
+    padding:20px;
+}
+.post p{
+    color: gray;
+    font-size: 12px;
+    padding: 41px;
+}
+.get-in-touch{
+    border-radius: 6px;
+    color: #966299;
+}
+.read-more{
+    border-radius: 6px;
+    color: #966299;
+}
+.view-my-work{
+    border-radius: 5px;
+    color: #966299;
+}
+/* Footer */
+footer {
+    background-color: #0d0d1d;
+    color: #fff;
+    text-align: center;
+    padding: 3rem;
+}

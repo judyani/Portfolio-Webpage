@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yanitza's Portfolio Home Page</title>
+    <style>
+         body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1b1b2f;
+    box-sizing: border-box;
+}
+
+/* Header */
+header {
+    background-color: #0d0d1d;
+    color: white;
+    padding: 10px 0;
+    top: 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+}
+
+.nav ul li {
+    margin-right: 20px;
+    
+}
+
+.nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.nav ul li a:hover,
+.nav ul li a.active {
+    color: #613963;
+}
+
+.social-icons {
+    position: absolute; 
+    top: 20px; 
+    right: 20px; 
+    display: flex; 
+    gap: 10px; 
+}
+
+.social-icons a img {
+    width: 30px; 
+    height: 30px;
+    transition: transform 0.3s;
+}
+
+.social-icons a img:hover {
+    transform: scale(1.2);
+}
+.social-icons img {
+    filter: invert(1);
+}
+.header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.header .logo span {
+    color: #613963;
+    font-style: italic;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.resume-container {
+   background-color: #fff;
+   padding: 2rem;
+   width: 60%;
+   max-width: 800px;
+   border-radius: 8px;
+   box-shadow: 0 4px 8px rgb(0, 0, 0, 0.1);
+}
+/* Header */
+.header2 {
+   text-align: center;
+   margin-bottom: 1.5rem;
+   background-color: #ab92ac;
+}
+.header2 h1 {
+   font-size: 1.8rem;
+   font-weight: bold;
+   color: #3a1b3b;
+}
+.header2 p {
+   color: #3a1b3b;
+   margin-top: 0.5rem;
+}
+/* Section Titles */
+section h2 {
+   font-size: 1.3rem;
+   font-weight: bold;
+   border-bottom: 1px solid #ccc;
+   padding-bottom: 0.3rem;
+   margin-bottom: 1rem;
+   color: #333;
+}
+/* Summary */
+.summary p {
+   color: #555;
+   line-height: 1.6;
+}
+/* Experience */
+.experience .job {
+   margin-bottom: 1.5rem;
+}
+.experience h3 {
+   font-size: 1.1rem;
+   font-weight: bold;
+   color: #333;
+}
+.experience p {
+   font-style: italic;
+   color: #777;
+   margin-top: 0.2rem;
+}
+.experience ul {
+   margin-top: 0.5rem;
+   padding-left: 1.5rem;
+   color: #555;
+}
+.experience ul li {
+   line-height: 1.6;
+}
+/* Education */
+.education p {
+   margin-top: 0.5rem;
+   color: #555;
+}
+/* Skills */
+.skills p {
+   color: #555;
+   line-height: 1.6;
+}
+/* Footer */
+footer {
+    background-color: #0d0d1d;
+    color: #fff;
+    text-align: center;
+    padding: 3rem;
+}
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>Me<span>Vro</span></h1>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="resume.html" class="active">Resume</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="social-icons">
+            <a href="https://github.com" target="_blank" class="icon">
+                <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" />
+            </a>
+            <a href="https://facebook.com" target="_blank" class="icon">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" />
+            </a>
+            <a href="https://instagram.com" target="_blank" class="icon">
+                <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" />
+            </a>
+        </div>
+    </header>
+
+    <div class="resume-container">
+        <!-- Header -->
+        <header class="header2">
+        <h1>Yanitza Chavez</h1>
+        <p>Coding Year 1 Student</p>
+        <p><a href="contact.html">Email: ychave527@west-mec.org | Phone: (623) 383-1240 | Location: Glendale, AZ</a></p>
+        </header>
+        <!-- Summary Section -->
+        <section class="summary">
+        <h2>Summary</h2>
+        <p>Tolleson Union High School student taking dual enrollment at Central West-MEC,
+            learning the fundamentals of HTML, CSS, JavaScript, etc.
+        </p>
+        <!-- Experience Section -->
+        <section class="experience">
+        <h2>Experience</h2>
+        <div class="job">
+            <h3>Crew Member - McDonalds</h3>
+            <p>December 2022 - August 2024</p>
+            <ul>
+                <li>Customer service</li>
+                <li>Food preparation</li>
+                <li>Cleanliless</li>
+                <li>Hygiene</li>
+           </ul>
+        </div>
+        <div class="job">
+            <h3>Retail Sales Associate - BestBuy</h3>
+            <p>September 2024 - Present</p>
+            <ul>
+                <li>Customer Service</li>
+                <li>Recommending products</li>
+                <li>Processing transactions</li>
+                <li>Stocking and maintaining the store</li>
+            </ul>
+        </div>
+        </section>
+        <!-- Education Section -->
+        <section class="education">
+            <h2>Education</h2>
+            <p>Coding</p>
+            <p>Central West-MEC, set to graduate: May 2026</p>
+        </section>
+        <!-- Skills Section -->
+        <section class="skills">
+        <h2>Skills</h2>
+        <p>JavaScript, HTML, CSS</p>
+        </section>
+        </div>
+    <!--Footer-->
+    <footer>
+        <p>&copy; 2024 Yanitza's Portfolio Page | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
