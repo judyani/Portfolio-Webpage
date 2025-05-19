@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Create Account</title>
+        <style>
+            * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body {
+    background-color: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.container {
+    background-color: #fff;
+    padding: 2rem;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 0;
+    color: #333;
+}
+p {
+    text-align: center;
+    color: grey;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+label {
+    font-size: 0.9rem;
+    color: #333;
+    display: block;
+    margin-top: 1rem;
+}
+input[type="text"], input[type="email"], input[type="password"], select, textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 0.25rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus, select:focus, textarea:focus {
+    border-color: #0c7df7;
+    outline: none;
+}
+small {
+    display: block;
+    margin-top: 0.25rem;
+    color: grey;
+    font-size: 0.8rem;
+}
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+}
+.checkbox-container input[type="checkbox"] {
+    margin-right: 0.5rem;
+}
+.btn {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #0c7df7;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+.btn:hover {
+    background-color: #064c97;
+}
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h2>Create Account</h2>
+            <p>Fill in the details to get started</p>
+            <form>
+                <label for="full-name"><strong>Full Name</strong><span style="color: red;">*</span></label>
+                    <input type="text" id="full-name" name="full-name" placeholder="John Doe" required>
+                <label for="email"><strong>Email Address</strong><span style="color: red;">*</span></label>
+                    <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                <label for="password"><strong>Password</strong><span style="color: red;">*</span></label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                    <small>Must be at least 8 characters long</small>
+                <label for="role"><strong>Role</strong></label>
+                <select id="role" name="role">
+                    <option value="">Select a role</option>
+                    <option value="admin">Admin</option>
+                    <option value="user">User</option>
+                    <option value="guest">Guest</option>
+                </select>
+                <label for="bio"><strong>Bio</strong></label>
+                <textarea id="bio" name="bio" placeholder="Tell us about yourself" rows="3"></textarea>
+                <small>Keep it short and sweet</small>
+                <div class="checkbox-container">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">I agree to the Terms and Conditions <span style="color: red;">*</span></label>
+                </div>
+                <button type="submit" class="btn">Create Account</button>
+            </form>
+        </div>
+    </body>
+</html> 

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Create a Blog Webpage with FLexbox</title>
+        <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+           
+        }
+        body{
+            background-color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .featured-content >.heading2::before{
+            content : '⭐';
+            color:black;
+        }
+        .navbar{
+            background-color: black;
+            color: whitesmoke;
+            padding: 35px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .blog-title{
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .navbar nav ul{
+            list-style: none;
+            display: flex;
+            gap: 15px;
+        }
+        .navbar nav ul li a{
+            color: whitesmoke;
+            text-decoration: none;
+        }
+        .navbar nav ul li a:hover{
+            text-decoration: underline;
+        }
+        .featured-post{
+            background-color: whitesmoke;
+            margin: 32px;
+            padding: 32px;
+            display: flex;
+            gap: 24px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgb(0, 0, 0);
+        }
+        .featured-post img{
+            width: 150px;
+            border-radius: 10px;
+        }
+        .featured-content p{
+            margin-top: 15px;
+            color: gray;
+        }
+        .read-more{
+            margin-top: 15px;
+            padding: 8px 15px;
+            background-color: rgb(47, 43, 43);
+            color: whitesmoke;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .read-more:hover{
+            background-color: gray;
+        }
+        
+        .recent-posts{
+            margin: 32px;
+            text-align: center;
+        
+        }
+        .recent-posts h2{
+            font-size: 18px;
+            margin-bottom: 15px;
+            padding:20px;
+        }
+        .posts-grid{
+            display: flex;
+            gap: 24px;
+            justify-content: center;
+        }
+        .post{
+            background-color: whitesmoke;
+            padding: 24px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgb(0, 0, 0);
+            width: 350px;
+            text-align: center;
+        }
+        .post h3{
+            font-size: 19px;
+            margin-bottom: 15px;
+            padding:20px;
+        }
+        .post p{
+            color: gray;
+            padding: 41px;
+        }
+        
+        footer{
+            background-color: rgb(47, 43, 43);
+            color: whitesmoke;
+            text-align: center;
+            padding: 45px;
+            margin-top: 32px;
+        }
+        </style>
+    </head>
+    <body>
+        <!--Navbar-->
+        <header class="navbar">
+            <h1 class="blog-title">My Tech Blog</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!--Featured Post-->
+        <section class="featured-post">
+            <img src="Yanitza Chavez - featured (1).PNG" alt="Featured Post Image">
+            <div class="featured-content">
+                <h2 class="heading2"> Post: The Future of Web Development</h2>
+                <p>
+                   Discover the latest trends and innovations shaping the web 
+                   development industry. From new frameworks to emerging 
+                   technologies, here's what you need to know
+                </p>
+                <button class="read-more">Read More</button>
+            </div>
+        </section>
+        <!--Recent Posts-->
+        <section class="recent-posts">
+            <h2>Recent Posts</h2>
+            <div class="posts-grid">
+                <div class="post">
+                    <h3>Understanding CSS Flexbox</h3>
+                    <p>
+                        Flexbox is a powerful tool that allows developers
+                        to create flexible layouts with ease. Learn how
+                        to master it!
+                    </p>
+                    <button class="read-more">Read More</button>
+                </div>
+                <div class="post">
+                    <h3>JavaScript ES2024 Features</h3>
+                    <p>
+                        Explore the upcoming features in JavaScript ES2024 and
+                        how they can improve your web development workflow.
+                    </p>
+                    <button class="read-more">Read More</button>
+                </div>
+                <div class="post">
+                    <h3>Responsive Design with Flexbox</h3>
+                    <p>
+                        Flexbox makes responsive design easier. Find out 
+                        how you can build flexible layouts with this tool.
+                    </p>
+                    <button class="read-more">Read More</button>
+                </div>
+            </div>
+        </section>
+        <!--Footer-->
+        <footer>
+            <p>&copy; 2024 My Tech Blog</p>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a web page about running club</title>
+    <link rel="stylesheet" href="running.css">
+    <style>
+        :root{
+    box-sizing: border-box;
+}
+*,
+ ::before,
+ ::after{
+    box-sizing: inherit;
+ }
+ body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #eee;
+ }
+ body * + * {
+    margin-top: 0.5em; 
+ }
+ .container{
+    max-width: 1200px;
+    margin: 0 auto;
+ }
+ header{
+    background-color: rgb(43, 101, 160);
+    color: white;
+    padding: 1em 1.5em;
+    border-radius: 1.25em;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.3em;
+    font-size: 1.5em;
+ }
+ .main{
+    background-color: #fff;
+    padding: 1em 1.5em;
+    border-radius: 1.25em;
+ }
+ .media{
+    float: left;
+    margin: 0 1.5em 1.5em 0;
+    max-width: calc(50% - 1.5em);
+    background: #eee;
+    padding: 0.5em;
+    /* margin-bottom: 1.5em; */
+    border-radius: 1.25em;
+ }
+ .media-image{
+    float: left;
+    margin-right: 1.5em;
+ }
+ .media-body h3{
+    margin-top: 0;
+    padding:0.5em;
+ }
+ .media-body{
+    margin-top: 0;
+    overflow:auto;
+ }
+
+ .media:nth-child(odd){
+   clear:left;
+ }
+ .clearfix::before,
+ .clearfix::after{
+    display: block;
+    content: " ";
+   
+ }
+.clearfix::after {
+   clear: both;
+}
+
+    </style>
+</head>
+<body>
+    <!--header-->
+<div class="container">
+     <!--Mian Heading for outside container-->
+     <header>
+         <h1>Franklin Running Club</h1>
+     </header>
+     <!--Sub container with heading and other sub -sub container-
+     nested double container-->
+
+     <main class="main clearfix">
+        <h2>Running Tips!</h2>
+        <!--Media 1-->
+    <div>
+
+
+         <div class="media">
+             <img class="media-image" src="runner.png" width="80px" alt="runner">
+             <div class="media body">
+                 <h3>Stregth</h3>
+                 <p>Strength training is an important part of injury prevention. Focus on your core— especially your abs and glutes.</p>
+             </div>
+         </div>
+        <!--Media 2-->
+         <div class="media">
+             <img class="media-image" src="shoes.png"  width="80px" alt="shoes">
+             <div class="media body">
+                 <h3>Cadenece</h3>
+                 <p>Check your stride turnover. The most efficient runners take about 180 steps per minute.</p>
+            </div>
+        </div>
+        <!--Media 3-->
+         <div class="media">
+                 <img class="media-image" src="shoes.png" width="80px" alt="shoes">
+                 <div class="media body">
+                     <h3>Change it up</h3>
+                     <p>Don't run the same every time you hit the road. Vary your pace, and vary the distance of your runs.</p>
+                </div>
+            </div>
+        <!--Media 4-->
+        <div class="media">
+            <img class="media-image" src="runner.png" width="80px" alt="runner">
+            <div class="media body">
+                <h3>Focus on form</h3>
+                <p>Run tall but relaxed. Your feet should hit the ground beneath your hips, not out in front of you.</p>
+            </div>
+        </div>
+    </div>
+    </main>
+</div>
+</body>
+</html>
